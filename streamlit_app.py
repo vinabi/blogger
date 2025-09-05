@@ -279,9 +279,3 @@ if st.session_state.state.get("final"):
     st.markdown(f"**Meta:** {final.get('meta','')}  \n**Slug:** `{final.get('slug','')}`  \n**Tags:** {', '.join(final.get('tags', []))}")
     st.markdown("### Final Markdown")
     st.markdown(final.get("body_md",""))
-
-    md_bytes = final.get("body_md","").encode("utf-8")
-    st.download_button("Download Markdown", md_bytes, file_name="final.md", mime="text/markdown")
-
-    pdf_bytes = markdown_to_basic_pdf_bytes(final.get("body_md",""))
-    st.download_button("Download PDF", pdf_bytes, file_name="final.pdf", mime="application/pdf")
