@@ -255,7 +255,7 @@ if st.session_state.state.get("draft"):
                                    extra)
                 st.session_state.state["draft"] = new_draft
                 st.session_state.state["revisions"] += 1
-                st.experimental_rerun()
+                st.rerun()
 
     with c2:
         if st.button("Approve & Finalize"):
@@ -270,7 +270,7 @@ if st.session_state.state.get("draft"):
                                  st.session_state.state["supervisor_notes"],
                                  st.session_state.state["tone"])
                 st.session_state.state["final"] = pack
-            st.experimental_rerun()
+            st.rerun()
 
 if st.session_state.state.get("final"):
     final = st.session_state.state["final"]
