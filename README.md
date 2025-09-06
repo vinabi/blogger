@@ -40,3 +40,9 @@ git clone https://github.com/vinabi/blogger.git
 cd blogger
 pip install -r requirements.txt
 
+---
+
+#### If you find this project helpful, don’t forget to star the repo! 🎀✨
+
+---
+
