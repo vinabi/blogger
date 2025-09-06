@@ -39,6 +39,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/vinabi/blogger.git
 cd blogger
 pip install -r requirements.txt
+```
 
 ---
 
